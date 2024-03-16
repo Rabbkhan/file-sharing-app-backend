@@ -12,7 +12,9 @@ let storage = multer.diskStorage({
     )} ${path.extname(file.originalname)}`;
     cb(null, uniqueName);
   },
+  
 });
+
 
 const upload = multer({
   storage: storage,
